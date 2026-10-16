@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Student World Pro — student notes, scholarships, education resources and official government portals in one place.">
+<title>Student World Pro | Student Resource Hub</title>
+<style>
+:root{--bg:#0b0d12;--panel:#141821;--panel2:#1b202b;--text:#f5f6f8;--muted:#aab2c0;--gold:#e9bd65;--line:#2b3240}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}.wrap{width:min(1180px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(11,13,18,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:850;letter-spacing:.2px;font-size:1.12rem}.brand span{color:var(--gold)}
+nav{display:flex;gap:16px;flex-wrap:wrap}nav a{font-size:.9rem;color:var(--muted)}nav a:hover,.gold{color:var(--gold)}
+.hero{padding:64px 0 40px;background:radial-gradient(ellipse at 75% 10%,#39301b 0%,transparent 38%),linear-gradient(135deg,#10131b,#0b0d12)}
+.eyebrow{color:var(--gold);font-size:.78rem;letter-spacing:2px;text-transform:uppercase;font-weight:750}
+h1{font-size:clamp(2.1rem,5vw,4rem);line-height:1.08;margin:12px 0 16px;max-width:850px}h1 span{color:var(--gold)}
+.hero p{max-width:700px;color:var(--muted);font-size:1.05rem}
+.searchbox{display:flex;gap:10px;max-width:700px;margin:26px 0 20px}.searchbox input{flex:1;min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:15px;color:var(--text);font-size:1rem;outline:none}.searchbox input:focus{border-color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#18140b;border:0;border-radius:10px;padding:12px 16px;font-weight:800;cursor:pointer}.btn:hover{filter:brightness(1.08)}
+.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0 0}.quick a{background:rgba(20,24,33,.85);border:1px solid var(--line);padding:15px;border-radius:13px}.quick b{display:block;font-size:1.05rem}.quick small{color:var(--muted)}
+section{padding:42px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:20px}.section-head h2{font-size:clamp(1.45rem,3vw,2rem);margin:0}.section-head p{margin:5px 0 0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:19px;min-width:0;transition:transform .18s,border-color .18s}.card:hover{transform:translateY(-3px);border-color:#80683a}.icon{font-size:1.55rem}.card h3{margin:9px 0 6px;font-size:1.08rem}.card p{margin:0 0 14px;color:var(--muted);font-size:.92rem}.card a.link{color:var(--gold);font-weight:750;font-size:.92rem}.tag{display:inline-block;color:var(--gold);background:#2a2418;border:1px solid #4a3b20;padding:3px 8px;border-radius:999px;font-size:.73rem;margin-bottom:8px}
+.notice{background:linear-gradient(120deg,#211c12,#151821);border:1px solid #4a3b20;border-radius:16px;padding:20px;display:flex;gap:14px;align-items:flex-start}.notice p{margin:4px 0 0;color:var(--muted)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}.filter{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:999px;padding:8px 13px;cursor:pointer}.filter.active{background:var(--gold);color:#18140b;border-color:var(--gold)}
+footer{border-top:1px solid var(--line);padding:28px 0 36px;color:var(--muted);font-size:.88rem}footer .foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.creator{color:var(--gold);font-weight:800;letter-spacing:.3px}
+@media(max-width:850px){nav{gap:10px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.quick{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.nav{align-items:flex-start;padding:14px 0;flex-direction:column}nav{gap:11px}.hero{padding-top:42px}.searchbox{flex-direction:column}.grid{grid-template-columns:1fr}.quick{grid-template-columns:repeat(2,minmax(0,1fr))}.section-head{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#home">STUDENT <span>WORLD PRO</span></a>
+<nav aria-label="Main navigation"><a href="#scholarships">Scholarships</a><a href="#notes">Study Notes</a><a href="#learning">Learning</a><a href="#government">Government</a><a href="#exams">Exams</a></nav>
+</div></header>
+<main id="home">
+<div class="hero"><div class="wrap">
+<div class="eyebrow">Your student resource hub</div>
+<h1>Learn smarter. Find <span>opportunities.</span></h1>
+<p>Study resources, scholarships, official notifications and trusted educational platforms — gathered in one student-friendly place.</p>
+<div class="searchbox"><input id="searchInput" type="search" placeholder="Search notes, scholarships, exams or websites…" aria-label="Search resources"><button class="btn" id="searchBtn">Search resources</button></div>
+<div class="quick">
+<a href="#scholarships"><b>🎓 Scholarships</b><small>Eligibility & application portals</small></a>
+<a href="#notes"><b>📚 Study Notes</b><small>Subjects and learning materials</small></a>
+<a href="#notifications"><b>🔔 Notifications</b><small>Official updates and dates</small></a>
+<a href="#government"><b>🏛️ Government portals</b><small>Verified starting points</small></a>
+</div></div></div>
+<section id="scholarships"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Funding & support</div><h2>Scholarship Portals</h2><p>Open the official portal and confirm eligibility and deadlines there.</p></div></div>
+<div class="grid">
+<article class="card resource"><div class="icon">🎓</div><h3>National Scholarship Portal</h3><p>Central scholarship schemes, applications and student updates.</p><a class="link" href="https://scholarships.gov.in/" target="_blank" rel="noopener">Open official portal ↗</a></article>
+<article class="card resource"><div class="icon">📘</div><h3>Assam Higher Education</h3><p>Scholarship-related information and higher education resources for Assam.</p><a class="link" href="https://directorateofhighereducation.assam.gov.in/" target="_blank" rel="noopener">Visit department ↗</a></article>
+<article class="card resource"><div class="icon">🇮🇳</div><h3>National Government Services</h3><p>Find public services and government scheme information.</p><a class="link" href="https://services.india.gov.in/" target="_blank" rel="noopener">Explore services ↗</a></article>
+</div></div></section>
+<section id="notifications"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Stay informed</div><h2>Notifications & Results</h2><p>Use official sources to verify announcements, dates and application details.</p></div></div>
+<div class="notice"><div class="icon">📌</div><div><strong>Important: verify every update</strong><p>This version provides trusted official links, not a live automatic notification feed. Check the relevant official portal for current dates, eligibility, results and notices. Never pay an unofficial agent or share passwords/OTP.</p></div></div>
+<div class="grid" style="margin-top:15px">
+<article class="card resource"><span class="tag">Admissions & exams</span><h3>National Testing Agency</h3><p>Entrance examination notices, admit cards and results.</p><a class="link" href="https://nta.ac.in/" target="_blank" rel="noopener">Open NTA ↗</a></article>
+<article class="card resource"><span class="tag">University updates</span><h3>University Grants Commission</h3><p>Higher education notices and university-related information.</p><a class="link" href="https://www.ugc.gov.in/" target="_blank" rel="noopener">Open UGC ↗</a></article>
+<article class="card resource"><span class="tag">Assam</span><h3>Assam Government</h3><p>State government services, departments and announcements.</p><a class="link" href="https://assam.gov.in/" target="_blank" rel="noopener">Open Assam portal ↗</a></article>
+</div></div></section>
+<section id="notes"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Learn by subject</div><h2>Study Notes & Materials</h2><p>Choose a subject area. Add your own notes and PDFs to this section as you build the site.</p></div></div>
+<div class="filters" aria-label="Filter study resources"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="school">School</button><button class="filter" data-filter="college">College</button><button class="filter" data-filter="exam">Competitive exams</button></div>
+<div class="grid">
+<article class="card resource" data-category="school"><div class="icon">🏫</div><h3>HSLC & Higher Secondary</h3><p>School-level revision, question papers and subject resources.</p><a class="link" href="https://diksha.gov.in/" target="_blank" rel="noopener">Explore DIKSHA ↗</a></article>
+<article class="card resource" data-category="college"><div class="icon">🎓</div><h3>BA / BSc / BCom Notes</h3><p>Organize semester notes, assignments and previous papers by subject.</p><a class="link" href="https://swayam.gov.in/" target="_blank" rel="noopener">Explore SWAYAM ↗</a></article>
+<article class="card resource" data-category="college"><div class="icon">📖</div><h3>Postgraduate Study</h3><p>Academic learning materials and postgraduate-level resources.</p><a class="link" href="https://epgp.inflibnet.ac.in/" target="_blank" rel="noopener">Open e-PG Pathshala ↗</a></article>
+<article class="card resource" data-category="school college"><div class="icon">🗂️</div><h3>Digital Textbooks</h3><p>Textbooks and digital learning resources from official education platforms.</p><a class="link" href="https://epathshala.nic.in/" target="_blank" rel="noopener">Open ePathshala ↗</a></article>
+<article class="card resource" data-category="school college"><div class="icon">📚</div><h3>Digital Library</h3><p>Search digital academic resources and learning collections.</p><a class="link" href="https://ndl.iitkgp.ac.in/" target="_blank" rel="noopener">Open NDLI ↗</a></article>
+<article class="card resource" data-category="school college"><div class="icon">🔎</div><h3>Research Papers</h3><p>Find scholarly articles and academic research references.</p><a class="link" href="https://scholar.google.com/" target="_blank" rel="noopener">Open Google Scholar ↗</a></article>
+</div></div></section>
+<section id="learning"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Online learning</div><h2>Educational Platforms</h2><p>Useful learning websites in one directory.</p></div></div>
+<div class="grid">
+<article class="card resource"><div class="icon">💬</div><h3>Brainly</h3><p>Community-based study questions and explanations.</p><a class="link" href="https://brainly.in/" target="_blank" rel="noopener">Visit Brainly ↗</a></article>
+<article class="card resource"><div class="icon">🎥</div><h3>SWAYAM Prabha</h3><p>Educational TV channels and learning content.</p><a class="link" href="https://swayamprabha.gov.in/" target="_blank" rel="noopener">Visit SWAYAM Prabha ↗</a></article>
+<article class="card resource"><div class="icon">🧑‍🏫</div><h3>DIKSHA</h3><p>Digital learning resources for students and educators.</p><a class="link" href="https://diksha.gov.in/" target="_blank" rel="noopener">Visit DIKSHA ↗</a></article>
+</div></div></section>
+<section id="government"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Official resources</div><h2>Government & Academic Portals</h2><p>Links to education departments, documents and academic bodies.</p></div></div>
+<div class="grid">
+<article class="card resource"><h3>Ministry of Education</h3><p>National education policies, schemes and department information.</p><a class="link" href="https://www.education.gov.in/" target="_blank" rel="noopener">Open portal ↗</a></article>
+<article class="card resource"><h3>AICTE</h3><p>Technical education information and official updates.</p><a class="link" href="https://www.aicte-india.org/" target="_blank" rel="noopener">Open portal ↗</a></article>
+<article class="card resource"><h3>DigiLocker</h3><p>Access supported digital documents and certificates securely.</p><a class="link" href="https://www.digilocker.gov.in/" target="_blank" rel="noopener">Open DigiLocker ↗</a></article>
+</div></div></section>
+<section id="exams"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Prepare & progress</div><h2>Competitive Exams</h2><p>Official recruitment and examination starting points.</p></div></div>
+<div class="grid">
+<article class="card resource"><h3>UPSC</h3><p>Civil services and other Union Public Service Commission examinations.</p><a class="link" href="https://upsc.gov.in/" target="_blank" rel="noopener">Official website ↗</a></article>
+<article class="card resource"><h3>Staff Selection Commission</h3><p>Central government recruitment notices and examination updates.</p><a class="link" href="https://ssc.gov.in/" target="_blank" rel="noopener">Official website ↗</a></article>
+<article class="card resource"><h3>Assam Public Service Commission</h3><p>State public service recruitment and official announcements.</p><a class="link" href="https://apsc.nic.in/" target="_blank" rel="noopener">Official website ↗</a></article>
+</div></div></section>
+</main>
+<footer><div class="wrap foot"><div>© <span id="year"></span> Student World Pro. All rights reserved.</div><div>Created &amp; Powered by <span class="creator">Utpal Gogoi</span></div><div>Independent student resource directory · Verify details on official websites.</div></div></footer>
+<script>
+const searchInput=document.getElementById('searchInput');
+const cards=[...document.querySelectorAll('.resource')];
+function searchResources(){const q=searchInput.value.trim().toLowerCase();let count=0;cards.forEach(card=>{const match=card.innerText.toLowerCase().includes(q);card.classList.toggle('hidden',!!q&&!match);if(match)count++;});document.querySelectorAll('section').forEach(section=>{const visible=[...section.querySelectorAll('.resource')].some(c=>!c.classList.contains('hidden'));section.classList.toggle('hidden',!!q&&!visible);});}
+document.getElementById('searchBtn').addEventListener('click',searchResources);
+searchInput.addEventListener('keydown',e=>{if(e.key==='Enter')searchResources();});
+searchInput.addEventListener('input',()=>{if(!searchInput.value.trim()){cards.forEach(c=>c.classList.remove('hidden'));document.querySelectorAll('section').forEach(s=>s.classList.remove('hidden'));}});
+document.querySelectorAll('.filter').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));button.classList.add('active');const filter=button.dataset.filter;cards.forEach(card=>{const category=card.dataset.category||'';card.classList.toggle('hidden',filter!=='all'&&!category.split(' ').includes(filter));});}));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body></html>
